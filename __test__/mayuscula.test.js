@@ -1,16 +1,15 @@
 // FUNCION A PROBAR
 
-const isUpperCse =require('..utils/esmayuscula');
+const isUpperCase = require('..utils/esmayuscula');
 
-text('The string HELLO should return true', () => {
+test('The string HELLO should return true', () => {
     const result = isUpperCase('HELLO');
     expect(result).toBe(true);
 })
 
 test('The string hello should return true', () => {
     const result = isUpperCase('hello');
-    expect(result).toBe(false0);
+    expect(result).toBe(false);
 })
 
 
-module.exports = isUpperCase;
